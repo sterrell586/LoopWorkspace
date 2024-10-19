@@ -277,6 +277,9 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+          # Module: File: LOWER CORRECTION RANGE TO 75
+          curl https://github.com/sterrell586/LoopKit/commit/f848b4c745fddbf372b46fc26fecd403d4d42c37.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
